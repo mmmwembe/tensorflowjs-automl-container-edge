@@ -7,7 +7,12 @@ Reference:
 (e) https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/vision/automl
 
 --------
-Best starting point: https://github.com/mmmwembe/tensorflowjs-automl-container-edge.git
+
+Best starting point: 
+```
+git clone https://github.com/mmmwembe/tensorflowjs-automl-container-edge.git
+
+```
 --------
 
 
@@ -33,11 +38,12 @@ gsutil cp -r gs://cards-automl-results-bucket/container-model/model-export/iod/t
 
     // docker pull gcr.io/automl-vision-ondevice/gcloud-container-1.14.0:latest
 
+   docker image ls
 ```
 
-# Step 5: List Docker Images
+# Step 5: Copy saved_model.pb to '/tmp/mounted_model/0001'
 ```
-    docker image ls
+ sudo  cp .saved_model.pb /tmp/mounted_model/0001/
 ```
 
 # Step 6: Setup Container Name and Port number
