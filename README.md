@@ -32,9 +32,10 @@ gsutil cp -r gs://cards-automl-results-bucket/container-model/model-export/iod/t
 
 # Step 4: Set environment variable for the Container Registry path and pull the Docker Vision AutoML Image
 ```
-    set CPU_DOCKER_GCR_PATH=gcr.io/automl-vision-ondevice/gcloud-container-1.14.0:latest
-
-    docker pull ${CPU_DOCKER_GCR_PATH}
+    // set CPU_DOCKER_GCR_PATH=gcr.io/automl-vision-ondevice/gcloud-container-1.14.0:latest
+    export CPU_DOCKER_GCR_PATH=gcr.io/automl-vision-ondevice/gcloud-container-1.14.0:latest
+    
+    sudo docker pull ${CPU_DOCKER_GCR_PATH}
 
     // docker pull gcr.io/automl-vision-ondevice/gcloud-container-1.14.0:latest
 
@@ -43,8 +44,10 @@ gsutil cp -r gs://cards-automl-results-bucket/container-model/model-export/iod/t
 
 # Step 5: Copy saved_model.pb to '/tmp/mounted_model/0001'
 ```
- sudo  cp .saved_model.pb /tmp/mounted_model/0001/
- 
+ mkdir /tmp/mounted_model
+ mkdir /tmp/mounted_model/0001
+ sudo cp ./saved_model.pb /tmp/mounted_model/0001/
+
 ```
 
 # Step 6: Setup Container Name and Port number
@@ -64,6 +67,8 @@ sudo docker run --rm --name ${CONTAINER_NAME} -p ${PORT}:8501 -v "/tmp/mounted_m
 
 # Step 8 - With the Container Running, Open another Terminal to run the python command
 ```
+    cd tensorflowjs-automl-container-edge/
+
     python automl_vision_edge_container_predict.py \
     --image_file_path=./test-images/test-image-01.jpg --image_key=1 --port_number=8051
 ```
