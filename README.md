@@ -55,3 +55,8 @@ sudo docker run --rm --name ${CONTAINER_NAME} -p ${PORT}:8501 -v "/tmp/mounted_m
     python automl_vision_edge_container_predict.py \
     --image_file_path=./test-images/test-image-01.jpg --image_key=1 --port_number=8051
 ```
+
+# Step 9 - Close Docker Container
+```
+    sudo docker stop ${CONTAINER_NAME}
+```
