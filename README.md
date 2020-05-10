@@ -6,6 +6,11 @@ Reference:
 (d) https://heartbeat.fritz.ai/automl-vision-edge-deploying-and-running-tensorflow-models-using-docker-containers-18336f78c4f7
 (e) https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/vision/automl
 
+--------
+Best starting point: https://github.com/mmmwembe/tensorflowjs-automl-container-edge.git
+--------
+
+
 # Step 1: Download AutoML pb model from GCP Storage (if not already in git repo)
 ```
 gsutil cp -r gs://cards-automl-results-bucket/container-model/model-export/iod/tf_saved_model-cards_automl_model-2020-05-09T10:41:58.203Z/* ./
