@@ -44,6 +44,7 @@ gsutil cp -r gs://cards-automl-results-bucket/container-model/model-export/iod/t
 # Step 5: Copy saved_model.pb to '/tmp/mounted_model/0001'
 ```
  sudo  cp .saved_model.pb /tmp/mounted_model/0001/
+ 
 ```
 
 # Step 6: Setup Container Name and Port number
