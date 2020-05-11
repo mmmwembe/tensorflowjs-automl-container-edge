@@ -1,10 +1,11 @@
 Edge-Container-Tensorflow-ML-Model
 Reference: 
-(a) https://cloud.google.com/vision/automl/docs/containers-gcs-tutorial?hl=en_US
-(b) https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/vision/automl/edge_container_predict
-(c) https://raw.githubusercontent.com/GoogleCloudPlatform/python-docs-samples/master/vision/automl/edge_container_predict/automl_vision_edge_container_predict.py
-(d) https://heartbeat.fritz.ai/automl-vision-edge-deploying-and-running-tensorflow-models-using-docker-containers-18336f78c4f7
-(e) https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/vision/automl
+(a) [IGCP containers-gcs-tutorial](https://cloud.google.com/vision/automl/docs/containers-gcs-tutorial?hl=en_US) 
+
+(b) [Github Automl Vision Predict](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/vision/automl/edge_container_predict)
+(c) [Github Automl Edge Container Predict](https://raw.githubusercontent.com/GoogleCloudPlatform/python-docs-samples/master/vision/automl/edge_container_predict/automl_vision_edge_container_predict.py)
+(d) [heartbeat.fritz.ai edge model on container](https://heartbeat.fritz.ai/automl-vision-edge-deploying-and-running-tensorflow-models-using-docker-containers-18336f78c4f7)
+(e) [GCP Automl Vision - Github](https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/vision/automl)
 
 --------
 
